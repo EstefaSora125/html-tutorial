@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Please enter your contact details</legend>
+                    <label for="user_name">Your name
+                    <input type="text" id="user_name" name="name" required>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                    <label for="email">E-mail address
+                    <input type="email" id="email" name="user_email" required>
+                    <abbr title="required" aria-label="required">*</abbr>
+                    </label>
+                    <label for="user_phone_number">Phone number (+57)
+                    <input type="number" id="user_phone_number" name="user_phone">
+                    </label>
+             </fieldset>
+             <fieldset>
+                 <legend>Please select the courses thar are you interested in
+                    <abbr title="required" aria-label="required">*</abbr>
+                 </legend>                 
+                 <input type="checkbox" id="taste_1" name="taste_web" value="web">
+                 <label for="taste_1">Web Developer</label>
+                 <input type="checkbox" id="taste_2" name="taste_react" value="react">
+                 <label for="taste_2">React Developer</label>
+                 <input type="checkbox" id="taste_3" name="taset_fullstack" value="fullstack">
+                 <label for="taste_3">Fullstack Developer</label>
+                 <input type="checkbox" id="taste_4" name="taste_other" value="other">
+                 <label for="taste_4">Other</label>
+             </fieldset>
+            <label for="text-box">Please enter a message</label>
+            <div>
+                <textarea name="message" id="text-box" cols="40" rows="10"></textarea>
+            </div>
+            <button type="submit">Send mesagge</button>
+            <button type="reset">Reset form</button>
+        </form>
+    </main>
+</body>
+</html>
