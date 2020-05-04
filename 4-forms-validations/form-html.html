@@ -8,23 +8,24 @@
 <body>
     <form>
         <label for="first-name">
-            First Name: <input type="text" id="first-name" name="user_name" required>
-            <abbr title="required" aria-label="required" >*</abbr>
+            First Name: <input type="text" id="first-name" name="user_name" aria-required="true" required>
+            <abbr title="required">*</abbr>
         </label>
          <label for="lastname">
-            Lastname: <input type="text" id="lastname" name="user_lastname" required>
-            <abbr title="required" aria-label="required">*</abbr>
+            Lastname: <input type="text" id="lastname" name="user_lastname" aria-required="true" required>
+            <abbr title="required" >*</abbr>
         </label>
         <label for="email">
-            Email: <input type="email" id="email" name="user_email" required>
-            <abbr title="required" aria-label="required">*</abbr>
+            Email: <input type="email" id="email" name="user_email" aria-required="true" required>
+            <abbr title="required">*</abbr>
         </label>
          <label for="birth-date">
-            Date of birth: <input type="date" id="birth-date" name="user_birth" required>
-            <abbr title="required" aria-label="required">*</abbr>
+            Date of birth: <input type="date" id="birth-date" name="user_birth" aria-required="true" required>
+            <abbr title="required">*</abbr>
          </label>
          <fieldset>
             <legend>Gender</legend>
+            <label for="gender">Gender:</label>
             <select id="gender_user">
                 <option value="Female">Female</option>
                 <option value="Male">Male</option>
@@ -55,7 +56,7 @@
         </fieldset> 
         <label for="myfile">Select files:</label>
         <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg" required>
-        <abbr title="required" aria-label="required">*</abbr>
+        <abbr title="required">*</abbr>
         <label for="text-box">Enter some mesagge</label>
         <textarea name="mesagge" id="text-box" cols="30" rows="10"></textarea>
         <button>Sumbit</button>
