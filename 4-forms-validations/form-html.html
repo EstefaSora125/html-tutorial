@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+</head>
+<body>
+    <form>
+        <label for="first-name">
+            First Name: <input type="text" id="first-name" name="user_name" aria-required="true" required>
+            <abbr title="required">*</abbr>
+        </label>
+         <label for="lastname">
+            Lastname: <input type="text" id="lastname" name="user_lastname" aria-required="true" required>
+            <abbr title="required" >*</abbr>
+        </label>
+        <label for="email">
+            Email: <input type="email" id="email" name="user_email" aria-required="true" required>
+            <abbr title="required">*</abbr>
+        </label>
+         <label for="birth-date">
+            Date of birth: <input type="date" id="birth-date" name="user_birth" aria-required="true" required>
+            <abbr title="required">*</abbr>
+         </label>
+         <fieldset>
+            <legend>Gender</legend>
+            <label for="gender_user">Gender:</label>
+            <select id="gender_user">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your socioeconomic status:</legend>
+            <input id="status-1" type="radio" name="socioeconomic" value="status-1"> 
+            <label for="status-1">1</label>
+            <input id="status-2" type="radio" name="socioeconomic" value="status-2">
+            <label for="status-2">2</label>
+            <input id="status-3" type="radio" name="socioeconomic" value="status-3">
+            <label for="status-3">3</label>
+            <input id="status-4" type="radio" name="socioeconomic" value="status-4">
+            <label for="status-4">4</label>
+            <input id="status-5" type="radio" name="socioeconomic" value="status-5">
+            <label for="status-5">5</label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose your hobbies</legend>
+            <input type="checkbox" id="taste_1" name="taste_read" value="read">
+            <label for="taste_1">Read books</label>      
+            <input type="checkbox" id="taste_2" name="taste_soccer" value="soccer">
+            <label for="taste_2">Play soccer</label>      
+            <input type="checkbox" id="taste_3" name="taste_origami" value="origami">
+            <label for="taste_3">Do origami</label>
+        </fieldset> 
+        <label for="myfile">Select files:</label>
+        <input type="file" id="myfile" name="myfile" accept="image/png, image/jpeg" required>
+        <abbr title="required">*</abbr>
+        <label for="text-box">Enter some mesagge</label>
+        <textarea name="mesagge" id="text-box" cols="30" rows="10"></textarea>
+        <button>Sumbit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
